@@ -1,11 +1,12 @@
-import "./App.css";
+import GlobalStyles from "./styles/GlobalStyles";
 
 function App() {
   return (
-    <div>
-      <h1>hello world</h1>
-      <p> just for testinh</p>
-    </div>
+    <>
+      <GlobalStyles />
+      <h1>test</h1>
+      <p>test</p>
+    </>
   );
 }
 
