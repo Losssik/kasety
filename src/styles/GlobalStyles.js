@@ -6,11 +6,14 @@ const GlobalStyles = createGlobalStyle`
   --color-brand-50: #eef2ff;
   --color-brand-100: #e0e7ff;
   --color-brand-200: #c7d2fe;
+  --color-brand-300: #a5b4fc;
+  --color-brand-400: #818cf8;
   --color-brand-500: #6366f1;
   --color-brand-600: #4f46e5;
   --color-brand-700: #4338ca;
   --color-brand-800: #3730a3;
   --color-brand-900: #312e81;
+  --color-brand-950: #1e1b4b;
 
   /* Grey */
   --color-grey-0: #fff;
@@ -50,8 +53,8 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
-  color: var(--color-brand-600);
-  background-color: var(--color-grey-600);
+  color: var(--color-brand-800);
+  background-color: #fff;
   line-height: 1.5;
   font-size: 1.6rem;
 
@@ -68,10 +71,15 @@ button {
   cursor: pointer;
 }
 
-
 a {
   color: inherit;
   text-decoration: none;
+  font-size: 5rem;
+}
+
+a:hover {
+   
+    background-color: var(--color-brand-500);
 }
 
 ul {
