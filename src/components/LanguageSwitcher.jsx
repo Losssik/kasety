@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
 
-const LanguageSwitcher = () => {
+function LanguageSwitcher() {
   const { i18n } = useTranslation();
 
-  const changeLanguage = (language) => {
+  function changeLanguage(language) {
     i18n.changeLanguage(language);
-  };
+  }
 
   return (
     <div>
@@ -13,6 +13,6 @@ const LanguageSwitcher = () => {
       <button onClick={() => changeLanguage("de")}>German</button>
     </div>
   );
-};
+}
 
 export default LanguageSwitcher;
