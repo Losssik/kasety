@@ -2,9 +2,15 @@ import styled from "styled-components";
 import background from "../photos/background.jpg";
 import LanguageSwitcher from "./LanguageSwitcher";
 import Slogan from "../ui/Slogan";
+import logo from "../photos/logo.jpg";
 
 const BackgroundImage = styled.div`
-  background-image: url(${background});
+  background-image: linear-gradient(
+      to top left,
+      rgba(245, 246, 252, 0.614),
+      rgba(17, 156, 216, 0.73)
+    ),
+    url(${background});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,28 +19,19 @@ const BackgroundImage = styled.div`
   align-items: start;
   justify-content: start;
   text-align: center;
+  z-index: 2;
 `;
 
 const StyledHeader = styled.header`
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   z-index: 1;
+  padding: 1rem;
 
-  padding: 2rem;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    opacity: 2%;
-    z-index: -1; /* Place it behind the header content */
+  img {
+    width: 80px;
   }
 `;
 
@@ -43,12 +40,9 @@ function HeroSection() {
     <>
       <BackgroundImage>
         <StyledHeader>
+          <LanguageSwitcher />
           <div>
-            <span>test</span>
-            <span>test</span>
-          </div>
-          <div>
-            <LanguageSwitcher />
+            <img src={logo} />
           </div>
         </StyledHeader>
       </BackgroundImage>
