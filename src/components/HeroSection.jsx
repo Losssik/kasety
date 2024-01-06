@@ -41,6 +41,7 @@ function HeroSection() {
       <BackgroundImage>
         <StyledHeader>
           <LanguageSwitcher />
+
           <div>
             <img src={logo} />
           </div>
