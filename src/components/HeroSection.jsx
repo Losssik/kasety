@@ -8,7 +8,7 @@ const BackgroundImage = styled.div`
   background-image: linear-gradient(
       to top left,
       rgba(245, 246, 252, 0.614),
-      rgba(17, 156, 216, 0.73)
+      rgba(9, 175, 246, 0.773)
     ),
     url(${background});
   background-size: cover;

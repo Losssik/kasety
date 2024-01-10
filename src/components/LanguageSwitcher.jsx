@@ -1,4 +1,17 @@
 import { useTranslation } from "react-i18next";
+import styled from "styled-components";
+
+const LanguageButton = styled.button`
+  background-color: #4f46e5;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+`;
+
+const Switcher = styled.div`
+  display: flex;
+  gap: 0.6rem;
+`;
 
 function LanguageSwitcher() {
   const { i18n } = useTranslation();
@@ -8,10 +21,14 @@ function LanguageSwitcher() {
   }
 
   return (
-    <div>
-      <button onClick={() => changeLanguage("en")}>English</button>
-      <button onClick={() => changeLanguage("de")}>German</button>
-    </div>
+    <Switcher>
+      <LanguageButton onClick={() => changeLanguage("en")}>
+        English
+      </LanguageButton>
+      <LanguageButton onClick={() => changeLanguage("de")}>
+        German
+      </LanguageButton>
+    </Switcher>
   );
 }
 

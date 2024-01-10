@@ -77,14 +77,15 @@ button {
 }
 
 a {
-  color: inherit;
+  color: var(--color-brand-500);
   text-decoration: none;
-  font-size: 5rem;
+  font-size: 2rem;
 }
 
 a:hover {
    
-    background-color: var(--color-brand-500);
+    color: var(--color-test);
+    transition: all 0.3s;
 }
 
 ul {
