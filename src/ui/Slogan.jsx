@@ -27,7 +27,9 @@ const StyledSlogan = styled.h1`
 function Slogan() {
   return (
     <div>
-      <StyledSlogan>Your Stories, Our Expertise:</StyledSlogan>
+      <StyledSlogan>
+        {'"'}Your Stories, Our Expertise{'"'}
+      </StyledSlogan>
       <CompanyName />
     </div>
   );

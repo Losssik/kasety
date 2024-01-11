@@ -1,8 +1,10 @@
 import styled from "styled-components";
-import Greeting from "../components/Greeting";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const StyledMenu = styled.ul`
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
   gap: 2rem;
   padding: 1rem;
 `;
@@ -11,6 +13,10 @@ const StyledMenuItem = styled.li`
   a:hover {
     color: #000;
   }
+`;
+
+const LanguageSwitcherWrapper = styled.div`
+  margin-left: auto;
 `;
 
 function Menu() {
@@ -28,7 +34,9 @@ function Menu() {
       <StyledMenuItem>
         <a href="#">FAQ</a>
       </StyledMenuItem>
-      <Greeting />
+      <LanguageSwitcherWrapper>
+        <LanguageSwitcher />
+      </LanguageSwitcherWrapper>
     </StyledMenu>
   );
 }

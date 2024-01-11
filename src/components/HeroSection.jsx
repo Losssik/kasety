@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import background from "../photos/background.jpg";
-import LanguageSwitcher from "./LanguageSwitcher";
+
 import Slogan from "../ui/Slogan";
 import logo from "../photos/logo.jpg";
 
@@ -25,7 +25,7 @@ const BackgroundImage = styled.div`
 const StyledHeader = styled.header`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: right;
   width: 100%;
   z-index: 1;
   padding: 1rem;
@@ -40,8 +40,6 @@ function HeroSection() {
     <>
       <BackgroundImage>
         <StyledHeader>
-          <LanguageSwitcher />
-
           <div>
             <img src={logo} />
           </div>
