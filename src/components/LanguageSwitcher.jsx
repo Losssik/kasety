@@ -7,6 +7,12 @@ const LanguageButton = styled.button`
   color: var(--color-grey-100);
   padding: 0.5rem 1rem;
   box-shadow: -2px 0px 36px -6px rgba(157, 159, 180, 1);
+  &:hover {
+    background-color: var(--color-brand-700);
+  }
+  &:active {
+    scale: 0.97;
+  }
 `;
 
 const Switcher = styled.div`

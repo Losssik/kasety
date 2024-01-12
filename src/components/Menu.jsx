@@ -6,12 +6,20 @@ const StyledMenu = styled.ul`
   align-items: center;
   justify-content: flex-start;
   gap: 2rem;
-  padding: 1rem;
+  padding: 1.3rem;
+  text-transform: uppercase;
 `;
 
 const StyledMenuItem = styled.li`
+  padding-right: 2rem;
+  border-right: 2px solid var(--color-brand-600);
+  a {
+    color: black;
+    font-size: 1.5rem;
+  }
+
   a:hover {
-    color: #000;
+    color: var(--color-brand-700);
   }
 `;
 
@@ -33,6 +41,9 @@ function Menu() {
       </StyledMenuItem>
       <StyledMenuItem>
         <a href="#">FAQ</a>
+      </StyledMenuItem>
+      <StyledMenuItem>
+        <a href="#">contact</a>
       </StyledMenuItem>
       <LanguageSwitcherWrapper>
         <LanguageSwitcher />
