@@ -22,6 +22,9 @@ const StyledSlogan = styled.h1`
   width: 45%;
   padding: 2rem;
   animation: ${fadeIn} 2s ease-in-out;
+  z-index: 150;
+  color: var(--color-grey-300);
+  text-transform: upe;
 `;
 
 function Slogan() {

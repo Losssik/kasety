@@ -28,9 +28,11 @@ const StyledCompanyName = styled.p`
   padding: 1rem 3rem 1rem 1rem;
   animation: ${slideInAndOut} 1s ease-in-out 2s forwards; /* Apply animation with 2s delay */
   opacity: 0;
-  background-color: var(--color-brand-600);
+  background-color: var(--color-brand-700);
   letter-spacing: 7px;
   clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 95% 0);
+  z-index: 150;
+  color: black;
 `;
 
 function CompanyName() {

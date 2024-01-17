@@ -59,7 +59,7 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
-  color: var(--color-brand-800);
+  color: var(--color-grey-200);
   background-color: #fff;
   line-height: 1.5;
   font-size: 1.6rem;

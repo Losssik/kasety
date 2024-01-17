@@ -2,7 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 
 const data = [
-  { question: "1", answer: "1" },
+  { question: "122", answer: "1" },
   { question: "2", answer: "2" },
   { question: "jak sie masz", answer: "dobrze" },
 ];
@@ -20,6 +20,7 @@ const StyledAccordion = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: black;
   }
 `;
 

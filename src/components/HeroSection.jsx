@@ -1,52 +1,33 @@
 import styled from "styled-components";
-import background from "../photos/background.jpg";
-
+import backgroundVideo from "../assets/background.mov";
 import Slogan from "../ui/Slogan";
-import logo from "../photos/logo.jpg";
+import Menu from "./Menu";
 
-const BackgroundImage = styled.div`
-  background-image: linear-gradient(
-      to top left,
-      rgba(245, 246, 252, 0.614),
-      rgba(9, 175, 246, 0.773)
-    ),
-    url(${background});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  text-align: center;
-  z-index: 2;
+const BackgroundVideo = styled.video`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
 `;
 
-const StyledHeader = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  width: 100%;
-  z-index: 1;
-  padding: 1rem;
-
-  img {
-    width: 80px;
-  }
+const Wrapper = styled.div`
+  position: relative;
+  height: 100vh;
 `;
 
 function HeroSection() {
   return (
-    <>
-      <BackgroundImage>
-        <StyledHeader>
-          <div>
-            <img src={logo} />
-          </div>
-        </StyledHeader>
-      </BackgroundImage>
+    <Wrapper>
+      <BackgroundVideo autoPlay loop muted>
+        <source src={backgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </BackgroundVideo>
+      <Menu />
       <Slogan />
-    </>
+    </Wrapper>
   );
 }
 

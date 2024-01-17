@@ -2,19 +2,23 @@ import styled from "styled-components";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const StyledMenu = styled.ul`
+  position: absolute;
+  width: 100%;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 2rem;
   padding: 1.3rem;
   text-transform: uppercase;
+  z-index: 300;
 `;
 
 const StyledMenuItem = styled.li`
   padding-right: 2rem;
-  border-right: 2px solid var(--color-brand-600);
+  border-right: 2px solid var(--color-brand-800);
   a {
-    color: black;
+    color: var(--color-grey-300);
     font-size: 1.5rem;
   }
 
