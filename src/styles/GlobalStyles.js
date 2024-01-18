@@ -6,7 +6,7 @@ const GlobalStyles = createGlobalStyle`
   --color-test: #695CC1;
 
   /* Indigo */
-  --color-brand-50: #eef2ff;
+  /* --color-brand-50: #eef2ff;
   --color-brand-100: #e0e7ff;
   --color-brand-200: #c7d2fe;
   --color-brand-300: #a5b4fc;
@@ -16,7 +16,21 @@ const GlobalStyles = createGlobalStyle`
   --color-brand-700: #4338ca;
   --color-brand-800: #3730a3;
   --color-brand-900: #312e81;
-  --color-brand-950: #1e1b4b;
+  --color-brand-950: #1e1b4b; */
+
+  /* blue */
+
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #1e40af;
+  --color-brand-900: #1e3a8a;
+  --color-brand-950: #172554;
 
   /* Grey */
   --color-grey-0: #fff;
@@ -58,7 +72,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: var(--color-grey-200);
   background-color: #fff;
   line-height: 1.5;
