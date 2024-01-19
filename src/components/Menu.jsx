@@ -44,7 +44,7 @@ function Menu() {
         <a href="#">projects</a>
       </StyledMenuItem>
       <StyledMenuItem>
-        <a href="#">FAQ</a>
+        <a href="#faq">FAQ</a>
       </StyledMenuItem>
       <StyledMenuItem>
         <a href="#">contact</a>

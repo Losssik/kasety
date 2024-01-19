@@ -5,7 +5,7 @@ import i18n from "./translations/i18n";
 import GlobalStyles from "./styles/GlobalStyles";
 import HeroSection from "./components/HeroSection";
 import Service from "./components/Service";
-import AboutUs from "./components/AboutUs";
+import FAQ from "./components/FAQ";
 
 import Accordion from "./components/Accordion";
 
@@ -15,7 +15,7 @@ const App = () => {
       <GlobalStyles />
       <I18nextProvider i18n={i18n}>
         <HeroSection />
-        <AboutUs />
+        <FAQ />
         <Accordion />
         <Service />
       </I18nextProvider>
