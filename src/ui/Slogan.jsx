@@ -39,7 +39,7 @@ const StyledCompanyName = styled.p`
   font-weight: 700;
   font-size: 5.4rem;
   padding: 1rem 3rem 1rem 1rem;
-  animation: ${slideInAndOut} 1s ease-in-out 2s forwards;
+  animation: ${fadeIn} 2s ease-in-out forwards;
   opacity: 0;
   letter-spacing: 7px;
   z-index: 150;
@@ -69,6 +69,7 @@ const Button = styled.a`
   margin-top: 5rem;
   box-shadow: 0px 5px 100px 51px rgba(20 0 190 / 67%);
   text-transform: uppercase;
+  animation: ${slideInAndOut} 1.8s ease-in-out;
 
   &:hover {
     border-color: var(--color-brand-800);
