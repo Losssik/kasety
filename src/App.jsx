@@ -4,10 +4,10 @@ import i18n from "./translations/i18n";
 
 import GlobalStyles from "./styles/GlobalStyles";
 import HeroSection from "./components/HeroSection";
-import Service from "./components/Service";
 import FAQ from "./components/FAQ";
 
 import Accordion from "./components/Accordion";
+import CompanyService from "./components/CompanyService";
 
 const App = () => {
   return (
@@ -15,9 +15,10 @@ const App = () => {
       <GlobalStyles />
       <I18nextProvider i18n={i18n}>
         <HeroSection />
+
+        <CompanyService />
         <FAQ />
         <Accordion />
-        <Service />
       </I18nextProvider>
     </>
   );
