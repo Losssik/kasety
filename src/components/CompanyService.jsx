@@ -22,13 +22,18 @@ const ImageContainer = styled.div`
   background-repeat: no-repeat;
   height: 52vh;
   border-radius: 15px;
-  box-shadow: rgb(5, 8, 10) 2px 15px 30px -10px;
+  box-shadow: rgb(5, 8, 10) 2px 15px 20px -4px;
   text-align: center;
   font-size: 4rem;
   color: var(--color-grey-200);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s linear;
+
+  &:hover {
+    transform: scale(1.01);
+  }
 
   p {
     background: rgba(255, 255, 255, 0.121);
@@ -61,6 +66,7 @@ function CompanyService() {
         <ImageContainer imageUrl={photo1}>
           <p>State-of-the-Art AI Technology</p>
         </ImageContainer>
+
         <TextContainer>
           <h4>01</h4>
           <p>
@@ -79,12 +85,15 @@ function CompanyService() {
             machine park translates into unparalleled efficiency and speed.
           </p>
         </TextContainer>
+
         <ImageContainer imageUrl={photo2}>
           <p>Tailored for the Broadcast Industry</p>
         </ImageContainer>
+
         <ImageContainer imageUrl={photo3}>
           <p>Expertise That Speaks Volumes</p>
         </ImageContainer>
+
         <TextContainer>
           <h4>03</h4>
           <p>
@@ -103,6 +112,7 @@ function CompanyService() {
             care and precision.
           </p>
         </TextContainer>
+
         <ImageContainer imageUrl={photo4}>
           <p>Comprehensive Solutions</p>
         </ImageContainer>

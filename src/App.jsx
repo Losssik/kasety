@@ -8,6 +8,8 @@ import FAQ from "./components/FAQ";
 
 import Accordion from "./components/Accordion";
 import CompanyService from "./components/CompanyService";
+import Parralax from "./components/Parralax";
+import Test from "./components/Test";
 
 const App = () => {
   return (
@@ -17,8 +19,10 @@ const App = () => {
         <HeroSection />
 
         <CompanyService />
+        <Parralax />
         <FAQ />
         <Accordion />
+        <Test />
       </I18nextProvider>
     </>
   );

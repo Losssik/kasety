@@ -1,5 +1,11 @@
+import styled from "styled-components";
+
+const StyledTest = styled.div`
+  height: 100vh;
+`;
+
 function Test() {
-  return <div>test</div>;
+  return <StyledTest>test</StyledTest>;
 }
 
 export default Test;
