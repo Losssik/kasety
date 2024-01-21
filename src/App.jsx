@@ -9,7 +9,9 @@ import FAQ from "./components/FAQ";
 import Accordion from "./components/Accordion";
 import CompanyService from "./components/CompanyService";
 import Parralax from "./components/Parralax";
-import Test from "./components/Test";
+
+import WhyUs from "./components/WhyUs";
+import PhoneParralax from "./components/PhoneParralax";
 
 const App = () => {
   return (
@@ -22,7 +24,8 @@ const App = () => {
         <Parralax />
         <FAQ />
         <Accordion />
-        <Test />
+        <PhoneParralax />
+        <WhyUs />
       </I18nextProvider>
     </>
   );
