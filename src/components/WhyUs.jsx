@@ -19,7 +19,7 @@ const Wrapper = styled.div`
     font-size: 2rem;
     text-align: center;
     padding: 2rem;
-    color: var(--color-brand-800);
+    color: var(--color-grey-900);
   }
 `;
 
