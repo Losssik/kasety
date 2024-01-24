@@ -12,6 +12,7 @@ import Parralax from "./components/Parralax";
 
 import WhyUs from "./components/WhyUs";
 import PhoneParralax from "./components/PhoneParralax";
+import ContactForm from "./components/ContactForm";
 
 const App = () => {
   return (
@@ -19,13 +20,14 @@ const App = () => {
       <GlobalStyles />
       <I18nextProvider i18n={i18n}>
         <HeroSection />
-
+        <WhyUs />
         <CompanyService />
         <Parralax />
         <FAQ />
         <Accordion />
         <PhoneParralax />
-        <WhyUs />
+
+        <ContactForm />
       </I18nextProvider>
     </>
   );

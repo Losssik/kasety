@@ -47,7 +47,7 @@ function Menu() {
         <a href="#faq">FAQ</a>
       </StyledMenuItem>
       <StyledMenuItem>
-        <a href="#">contact</a>
+        <a href="#contact">contact</a>
       </StyledMenuItem>
       <LanguageSwitcherWrapper>
         <LanguageSwitcher />
