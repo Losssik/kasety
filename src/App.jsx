@@ -12,7 +12,7 @@ import Parralax from "./components/Parralax";
 
 import WhyUs from "./components/WhyUs";
 import PhoneParralax from "./components/PhoneParralax";
-import ContactForm from "./components/ContactForm";
+import { ContactUs } from "./components/ContactUs";
 
 const App = () => {
   return (
@@ -26,8 +26,7 @@ const App = () => {
         <FAQ />
         <Accordion />
         <PhoneParralax />
-
-        <ContactForm />
+        <ContactUs />
       </I18nextProvider>
     </>
   );
