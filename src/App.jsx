@@ -13,6 +13,8 @@ import Parralax from "./components/Parralax";
 import WhyUs from "./components/WhyUs";
 import PhoneParralax from "./components/PhoneParralax";
 import { ContactUs } from "./components/ContactUs";
+import Test from "./components/Test";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -21,12 +23,15 @@ const App = () => {
       <I18nextProvider i18n={i18n}>
         <HeroSection />
         <WhyUs />
-        <CompanyService />
         <Parralax />
+        <Test />
+        <CompanyService />
+
         <FAQ />
         <Accordion />
         <PhoneParralax />
         <ContactUs />
+        <Footer />
       </I18nextProvider>
     </>
   );
